@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Question of day 2 Assignment</title>
+</head>
+<body>
+    <h1> First Question of day 2 Assignment </h1>
+    <p id="sample"> </p>
+    <p id="sample2"> </p>
+    
+</body>
+<script>
+    var date=new Date()
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    document.getElementById("sample").innerHTML="Today is: "+ days[date.getDay()];
+    var n= Intl.DateTimeFormat("en",{timeStyle:"medium"});
+    document.getElementById("sample2").innerHTML = "Time is: "+ n.format(Date.now());
+</script>
+</html>

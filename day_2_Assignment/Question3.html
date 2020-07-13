@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Question of day 2 Assignment</title>
+</head>
+<body>
+    <h1> Third Question of day 2 Assignment </h1>
+    <p id="sample"> </p>
+    <p id="sample2"> </p>
+    
+</body>
+<script>
+    var n= Intl.DateTimeFormat("en",{dateStyle:"short"});
+    document.getElementById("sample").innerHTML = "Date in mm/dd/yy: "+ n.format(Date.now());
+    var n= Intl.DateTimeFormat("en-GB",{dateStyle:"short"});
+    document.getElementById("sample2").innerHTML = "Date in dd/mm/yy: "+ n.format(Date.now());
+</script>
+</html>
