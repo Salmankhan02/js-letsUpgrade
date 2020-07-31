@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <h1>To Do list</h1>
+    <h3>Your list will be present here when you come back again use exit button to exit</h3>
+    <div id="list">
+        <form id='myForm'>
+        <input type='text' id='textinput' />
+        <input type='button' onclick='taskadd()' value='Add to list' />
+        <input type='button' onclick="deleteCheckBox()" value='Delete' />
+        <input type='button' onclick="exit()" value='Exit' />
+    </form>
+        <ul id="place"></ul>
+    </div>
+    
+
+</body>
+<script src="todo.js"></script>
+</html>
