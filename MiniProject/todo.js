@@ -55,7 +55,6 @@ function exit(){
     localStorage.setItem("todo",num)    
     
     if (confirm("Your Todo list will be stored in the browser")) {
-        // window.close();
         var win = window.open("about:blank", "_self");
         win.close();    
     }
